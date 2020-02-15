@@ -10,15 +10,19 @@
 // fetch recibe UN parametro obligatorio: la direccion web
 // parametro opcional: UN OBJETO
 
-// fetch(`https://meli-fnsefibufx.now.sh/user`, {
-//   method: 'POST',
-//   headers: { 'Content-Type': 'application/json' },
-//   body: JSON.stringify(this.state.data)
-// })
-//   .then(data => data.json()
-//   ).then(result => {
-//    console.log(data)
-//   });
+fetch('https://meli-nnaykhkakj.now.sh/user/list')
+  .then(data => data.json())
+  .then(result => console.log(result));
+  
+  
+  // fetch(`https://meli-nnaykhkakj.now.sh/user/remove/${3} `, {
+  //   method: 'DELETE',
+  //   headers: { 'Content-Type': 'application/json' },
+    
+  // })
+    // .then(data => data.json())
+    // .then(result => console.log(result));
+
 fetch('https://meli-nnaykhkakj.now.sh/user/list')
     .then(data => data.json())
     .then(result => {
